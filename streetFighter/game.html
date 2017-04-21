@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>街头霸王</title>
+		<style>
+		#canvas{
+		    background:#fff url(img/bg-canvas.gif) no-repeat 0 bottom;
+		    height: 250px;
+		    width: 620px;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right:0;
+		    bottom: 0;
+		    margin: auto;
+		}
+		.blood-box{
+		    background: url(img/bg-bloodbar.gif) no-repeat center center;
+		    height: 25px;
+		}
+		kbd{
+		    background: #000;
+		    color: white;
+		    font-weight: bold;
+		    border-radius: 5px;
+		    padding: 2px 4px;
+		}
+		</style>
+		
+	</head>
+	<body>
+	    
+		<article  id="canvas">
+		    <div class="blood-box"></div>
+		</article>
+		<article>
+                <dl>
+                	<dt>
+                	    <kbd>W</kbd>,
+                	    <kbd>A</kbd>,
+                	    <kbd>S</kbd>,
+                	    <kbd>D</kbd>
+                    </dt>
+                	<dd>
+                	                           控制人物方向,跳跃,后退,下蹲,前进
+                	</dd>
+                	<dt>
+                	    <kbd>J</kbd>,
+                	    <kbd>K</kbd>,
+                	    <kbd>L</kbd>
+                	</dt>
+                	<dd>依次对应轻手,中手,重手</dd>
+                	<dt>
+                        <kbd>U</kbd>,
+                        <kbd>I</kbd>,
+                        <kbd>O</kbd>
+                    </dt>
+                    <dd>依次对应轻脚,中脚,重脚</dd>
+                    <dt>
+                        <kbd>S</kbd>
+                        +
+                        <kbd>D</kbd>
+                        +
+                        <kbd>手</kbd>
+                    </dt>
+                    <dd>气功波</dd>
+                </dl>
+            
+		</article>
+		<script src="js/game.js" ></script>
+	</body>
+</html>
